@@ -1,10 +1,8 @@
 package paqueteprincipal;
-
 public class Categoria {
     Validaciones entrada= new Validaciones();
 private String Id,NombreCategoria;
-
-    public Categoria(String Id, String Nombre) {
+    public Categoria(String Id, String NombreCategoria) {
         this.Id = Id;
         this.NombreCategoria = NombreCategoria;
     }
@@ -17,13 +15,10 @@ private String Id,NombreCategoria;
         return NombreCategoria;
     }
 //setter
-    public void setId(String Id) {
-        this.Id = entrada.ValidacionString("Ingrese id del producto");
-    }
-
-    public void setNombreCategoria(String NombreCategoria) {
-        this.NombreCategoria = entrada.ValidacionString("Ignrese nombre de categoria");
-    }
-
-
+public void setId(String Id) {
+    this.Id = Id;
+}
+public void setNombreCategoria(String NombreCategoria) {
+    this.NombreCategoria = NombreCategoria;
+}
 }

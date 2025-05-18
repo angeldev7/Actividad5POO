@@ -1,5 +1,4 @@
 package paqueteprincipal;
-
 public class Producto {
     Validaciones entrada= new Validaciones();
     private String nombre;
@@ -30,22 +29,19 @@ public class Producto {
         return precio;
     }
 //setter
-    public void setNombre(String nombre) {
-        this.nombre = entrada.ValidacionString("Ingrese un nombre: ");
-    }
+public void setCodigo(int codigo) {
+    this.codigo = codigo;
+}
+public void setPrecio(double precio) {
+    this.precio = precio;
+}
+public void setNombre(String nombre) {
+    this.nombre = nombre;
+}
 
-    public void setCategoria(Categoria categoria) {
+        public void setCategoria(Categoria categoria) {
         this.categoria = categoria;
     }
-
-    public void setCodigo(int codigo) {
-        this.codigo = entrada.ValidacionIntPositivo("Ingrese un codigo: ");
-    }
-
-    public void setPrecio(double precio) {
-        this.precio = entrada.ValidacionDoublePositivo("Ingrese un precio: ");
-    }
-    
     public void MostrarResumen(){
         System.out.println("\n Producto:");
         System.out.println("Codigo: " + getCodigo());
